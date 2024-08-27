@@ -1,6 +1,8 @@
 import '../../styles/globals.css';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
+import DefaultHeader from '@/components/layout/header/DefaultHeader';
+import DefaultFooter from '@/components/layout/footer/DefaultFooter';
 
 export const metadata = {
 	title: 'Create Next App',
@@ -14,15 +16,11 @@ export default async function RootLayout({ children, params: { locale } }) {
 		<html lang={locale} suppressHydrationWarning>
 			<body className='flex min-h-screen flex-col'>
 				<NextIntlClientProvider messages={messages}>
-					<header>
-						<div className='container mx-auto px-4 py-8'>header</div>
-					</header>
+					<DefaultHeader />
 					<main className='flex-grow'>
 						<div className='container mx-auto px-4 py-8'>{children}</div>
 					</main>
-					<footer>
-						<div className='container mx-auto px-4 py-8'>footer</div>
-					</footer>
+					<DefaultFooter />
 				</NextIntlClientProvider>
 			</body>
 		</html>
