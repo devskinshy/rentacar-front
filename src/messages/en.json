@@ -1,5 +1,8 @@
 {
-  "main": {
-    "title": "Project"
-  }
+	"header": {
+		"login": "LOGIN"
+	},
+	"main": {
+		"title": "Project"
+	}
 }
