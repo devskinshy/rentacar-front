@@ -8,7 +8,7 @@ function DefaultHeader() {
 	const t = useTranslations('header');
 
 	return (
-		<header>
+		<header className='sticky top-0 bg-white'>
 			<div className='container mx-auto px-4 py-8'>
 				<div className='flex items-center justify-between'>
 					<div className='h-12 w-36'>
@@ -21,7 +21,7 @@ function DefaultHeader() {
 						/>
 					</div>
 
-					<div className='flex items-center'>
+					<div className='flex items-center space-x-1'>
 						<Button variant='secondary'>{t('login')}</Button>
 						<Button variant='ghost' size='icon'>
 							<Globe />
