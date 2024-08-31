@@ -1,8 +1,16 @@
 {
+	"language": {
+		"en": "english",
+		"ko": "한국어"
+	},
 	"header": {
 		"login": "로그인"
 	},
 	"main": {
 		"title": "프로젝트"
+	},
+	"footer" : {
+		"terms": "개인정보처리방침",
+		"privacy": "이용약관"
 	}
 }
