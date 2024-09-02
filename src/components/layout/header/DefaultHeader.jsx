@@ -33,7 +33,7 @@ function DefaultHeader() {
 							alt='logo'
 							width={201}
 							height={52}
-							layout='responsive'
+							priority
 						/>
 					</div>
 

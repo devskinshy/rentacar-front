@@ -13,8 +13,8 @@ export default async function RootLayout({ children, params: { locale } }) {
 	const messages = await getMessages();
 
 	return (
-		<html lang={locale} suppressHydrationWarning>
-			<body className='flex min-h-screen flex-col'>
+		<html lang={locale}>
+			<body className='flex min-h-screen flex-col' suppressHydrationWarning>
 				<NextIntlClientProvider messages={messages}>
 					<DefaultHeader />
 					<main className='flex-grow'>
