@@ -22,7 +22,8 @@ function DefaultFooter() {
 					<div>
 						<Button
 							variant='outline'
-							className='rounded- rounded-full border-background bg-inherit text-inherit'>
+							className='rounded- rounded-full border-background bg-inherit text-inherit'
+						>
 							{c(lang)}
 						</Button>
 					</div>
