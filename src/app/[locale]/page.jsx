@@ -5,7 +5,7 @@ import HomeMagazine from '@/components/home/HomeMagazine';
 
 export default function Home() {
 	return (
-		<div className='space-y-3'>
+		<div className='space-y-5'>
 			<HomeBanner />
 			<HomeShortRent />
 			<HomeLongRent />

@@ -1,7 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Globe, AlignLeft } from 'lucide-react';
+import {
+	AlignLeftIcon,
+	CircleUserRoundIcon,
+	GlobeIcon,
+	UserRoundXIcon,
+} from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import {
 	DropdownMenu,
@@ -37,12 +42,17 @@ function DefaultHeader() {
 						/>
 					</div>
 
-					<div className='flex items-center space-x-3'>
-						<Button variant='secondary'>{t('login')}</Button>
+					<div className='flex items-center'>
+						<Button variant='ghost' size='icon'>
+							<CircleUserRoundIcon />
+							{/* <UserRoundXIcon /> */}
+						</Button>
 
 						<DropdownMenu>
 							<DropdownMenuTrigger asChild>
-								<Globe />
+								<Button variant='ghost' size='icon'>
+									<GlobeIcon />
+								</Button>
 							</DropdownMenuTrigger>
 							<DropdownMenuPortal>
 								<DropdownMenuContent>
@@ -56,7 +66,9 @@ function DefaultHeader() {
 
 						<Sheet>
 							<SheetTrigger asChild>
-								<AlignLeft />
+								<Button variant='ghost' size='icon'>
+									<AlignLeftIcon />
+								</Button>
 							</SheetTrigger>
 							<SheetContent>
 								<SheetHeader>

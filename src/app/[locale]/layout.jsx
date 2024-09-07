@@ -17,7 +17,7 @@ export default async function RootLayout({ children, params: { locale } }) {
 			<body className='flex min-h-screen flex-col' suppressHydrationWarning>
 				<NextIntlClientProvider messages={messages}>
 					<DefaultHeader />
-					<main className='flex flex-auto'>
+					<main className='flex flex-auto bg-[#DDE1ED]'>
 						<div className='container mx-auto px-4 py-8'>{children}</div>
 					</main>
 					<DefaultFooter />
