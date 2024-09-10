@@ -1,4 +1,7 @@
 import React from 'react';
+import Lottie from 'react-lottie';
+import jejuLottie from './lotties/jejuLottie.json';
+import landLottie from './lotties/landLottie.json';
 
 function HomeShortRent() {
 	return (
@@ -7,7 +10,22 @@ function HomeShortRent() {
 				<p>단기 렌터카</p>
 				<p>예약확인</p>
 			</div>
-			<div>컨텐츠</div>
+			<div>
+				<Lottie
+					options={{
+						loop: true,
+						autoplay: true,
+						animationData: jejuLottie,
+					}}
+				/>
+				<Lottie
+					options={{
+						loop: true,
+						autoplay: true,
+						animationData: landLottie,
+					}}
+				/>
+			</div>
 			<div>temp</div>
 		</section>
 	);
