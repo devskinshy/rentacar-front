@@ -1,37 +1,12 @@
 'use client';
 
 import React from 'react';
-import Lottie from 'react-lottie';
+import Lottie from 'lottie-react';
 import { Card } from '@/components/ui/card';
 import jejuLottie from './lotties/jejuLottie.json';
 import landLottie from './lotties/landLottie.json';
-import longRentLottie from './lotties/longRentLottie.json';
 
 function HomeShortRent() {
-	const jeju = {
-		loop: true,
-		autoplay: true,
-		animationData: jejuLottie,
-		// rendererSettings: {
-		// 	preserveAspectRatio: 'xMidYMid slice',
-		// },
-	};
-	const land = {
-		loop: true,
-		autoplay: true,
-		animationData: landLottie,
-		// rendererSettings: {
-		// 	preserveAspectRatio: 'xMidYMid slice',
-		// },
-	};
-	// const long = {
-	// 	loop: true,
-	// 	autoplay: true,
-	// 	animationData: longRentLottie,
-	// 	rendererSettings: {
-	// 		preserveAspectRatio: 'xMidYMid slice',
-	// 	},
-	// };
 	return (
 		<section className='space-y-3'>
 			<div className='flex justify-between'>
@@ -41,17 +16,16 @@ function HomeShortRent() {
 			<div className='space-y-3'>
 				<div className='flex space-x-3'>
 					<Card className='w-1/2 rounded-2xl'>
-						<Lottie options={jeju} />
+						<Lottie animationData={jejuLottie} loop autoplay />
 					</Card>
 					<Card className='w-1/2 rounded-2xl'>
-						<Lottie options={land} />
+						<Lottie animationData={landLottie} loop autoplay />
 					</Card>
 				</div>
 				<div>
 					<Card className='w-full rounded-2xl'>items</Card>
 				</div>
 			</div>
-			<div>temp</div>
 		</section>
 	);
 }
