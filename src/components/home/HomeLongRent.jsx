@@ -8,24 +8,17 @@ import longRentLottie from './lotties/longRentLottie.json';
 function HomeLongRent() {
 	return (
 		<section className='space-y-3'>
-			<div>
+			<div className='flex'>
 				<p>장기 렌터카</p>
 			</div>
-			<div className='space-y-3'>
-				<div className='flex space-x-3'>
-					<Card className='w-1/2 rounded-2xl'>
-						<Lottie animationData={longRentLottie} loop autoplay />
-					</Card>
-					<div className='flex w-1/2 flex-col space-y-3'>
-						<Card className='w-full flex-auto rounded-2xl'>마이카 세이브</Card>
-						<Card className='w-full flex-auto rounded-2xl'>비즈카</Card>
-					</div>
-				</div>
-				<div>
-					<Card className='w-full rounded-2xl'>차방정</Card>
-				</div>
+			<div className='grid grid-cols-2 gap-3'>
+				<Card className='row-span-2 rounded-2xl'>
+					<Lottie animationData={longRentLottie} loop autoplay />
+				</Card>
+				<Card className='w-full flex-auto rounded-2xl'>마이카 세이브</Card>
+				<Card className='w-full flex-auto rounded-2xl'>비즈카</Card>
+				<Card className='col-span-2 rounded-2xl'>items</Card>
 			</div>
-			<div>temp</div>
 		</section>
 	);
 }

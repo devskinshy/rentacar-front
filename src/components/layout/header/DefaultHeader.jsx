@@ -29,7 +29,7 @@ function DefaultHeader() {
 	const t = useTranslations('header');
 
 	return (
-		<header className='sticky top-0 bg-white'>
+		<header className='sticky top-0 z-10 bg-white'>
 			<div className='container mx-auto px-4 py-8'>
 				<div className='flex items-center justify-between'>
 					<div className='h-12 w-36'>
@@ -44,8 +44,8 @@ function DefaultHeader() {
 
 					<div className='flex items-center'>
 						<Button variant='ghost' size='icon'>
-							<CircleUserRoundIcon />
-							{/* <UserRoundXIcon /> */}
+							{/* <CircleUserRoundIcon /> */}
+							<UserRoundXIcon />
 						</Button>
 
 						<DropdownMenu>
