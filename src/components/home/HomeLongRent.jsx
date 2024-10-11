@@ -1,8 +1,11 @@
 'use client';
 
 import React from 'react';
+
 import Lottie from 'lottie-react';
+
 import { Card } from '@/components/ui/card';
+
 import longRentLottie from './lotties/longRentLottie.json';
 
 function HomeLongRent() {

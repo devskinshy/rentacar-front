@@ -1,8 +1,9 @@
 import '../../styles/globals.css';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import DefaultHeader from '@/components/layout/header/DefaultHeader';
+
 import DefaultFooter from '@/components/layout/footer/DefaultFooter';
+import DefaultHeader from '@/components/layout/header/DefaultHeader';
 
 export const metadata = {
 	title: 'Create Next App',

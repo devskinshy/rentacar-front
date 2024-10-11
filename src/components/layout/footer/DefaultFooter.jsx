@@ -1,7 +1,9 @@
 import React from 'react';
+
+import { useLocale, useTranslations } from 'next-intl';
+
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
-import { useLocale, useTranslations } from 'next-intl';
 
 function DefaultFooter() {
 	const locale = useLocale();
@@ -22,8 +24,7 @@ function DefaultFooter() {
 					<div>
 						<Button
 							variant='outline'
-							className='rounded- rounded-full border-background bg-inherit text-inherit'
-						>
+							className='rounded- rounded-full border-background bg-inherit text-inherit'>
 							{c(lang)}
 						</Button>
 					</div>

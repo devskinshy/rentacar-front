@@ -1,11 +1,13 @@
 import React from 'react';
+
+import Image from 'next/image';
+
+import { Card, CardContent } from '@/components/ui/card';
 import {
 	Carousel,
 	CarouselContent,
 	CarouselItem,
 } from '@/components/ui/carousel';
-import { Card, CardContent } from '@/components/ui/card';
-import Image from 'next/image';
 
 function HomeMagazine() {
 	return (

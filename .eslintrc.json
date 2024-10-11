@@ -3,8 +3,59 @@
 	"plugins": ["prettier"],
 	"rules": {
 		"prettier/prettier": ["error"],
-		"import/prefer-default-export": "off",
-		"react/jsx-props-no-spreading": "off"
+		"import/prefer-default-export": ["off"],
+		"react/require-default-props": ["off"],
+		"react/jsx-props-no-spreading": ["off"],
+		"react/no-array-index-key": ["off"],
+		"react/no-unescaped-entities": ["off"],
+		"react/jsx-no-constructed-context-values": ["off"],
+		"jsx-a11y/heading-has-content": ["off"],
+		"no-shadow": ["off"],
+		"consistent-return": ["off"],
+
+		"sort-imports": [
+			"error",
+			{
+				"ignoreCase": true,
+				"ignoreDeclarationSort": true,
+				"ignoreMemberSort": false,
+				"allowSeparatedGroups": true
+			}
+		],
+		"import/order": [
+			"error",
+			{
+				"newlines-between": "always",
+				"groups": [
+					"builtin",
+					"type",
+					"external",
+					"internal",
+					"parent",
+					"sibling",
+					"index"
+				],
+				"pathGroups": [
+					{
+						"pattern": "next",
+						"group": "builtin"
+					},
+					{
+						"pattern": "react",
+						"group": "builtin"
+					},
+					{
+						"pattern": "@/**",
+						"group": "internal"
+					}
+				],
+				"pathGroupsExcludedImportTypes": [],
+				"alphabetize": {
+					"order": "asc",
+					"caseInsensitive": true
+				}
+			}
+		]
 	},
 	"settings": {
 		"import/resolver": {

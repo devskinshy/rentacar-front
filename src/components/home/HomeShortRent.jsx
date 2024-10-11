@@ -1,8 +1,11 @@
 'use client';
 
 import React from 'react';
+
 import Lottie from 'lottie-react';
+
 import { Card } from '@/components/ui/card';
+
 import jejuLottie from './lotties/jejuLottie.json';
 import landLottie from './lotties/landLottie.json';
 

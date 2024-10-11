@@ -1,21 +1,22 @@
 import React from 'react';
-import Image from 'next/image';
-import { Button } from '@/components/ui/button';
+
 import {
 	AlignLeftIcon,
 	CircleUserRoundIcon,
 	GlobeIcon,
 	UserRoundXIcon,
 } from 'lucide-react';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+
+import { Button } from '@/components/ui/button';
 import {
 	DropdownMenu,
 	DropdownMenuContent,
 	DropdownMenuItem,
-	DropdownMenuTrigger,
 	DropdownMenuPortal,
+	DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-
 import {
 	Sheet,
 	SheetContent,
